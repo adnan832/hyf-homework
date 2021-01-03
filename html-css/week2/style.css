@@ -1,0 +1,136 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.1;
+    width: 100%;
+    }
+    @media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+        body {
+            font-family: sans-serif;
+        }
+        }
+
+    ul {
+        list-style: none;
+    }
+    h1 {
+        font-weight:800;
+        font-size: 36px;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+    }
+    
+    h2 {
+        font-size: 26px;
+        padding-bottom: 15px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    
+    h3 {
+        font-size: 16px;
+        padding-bottom: 21px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    a  {
+        text-decoration: none;
+    }
+#MainTitle {
+    background-color:whitesmoke;
+    padding: 3% 15%;
+    border-bottom: 0.1rem solid lightgrey; 
+	
+    }
+#MainTitle p {
+    color:rgba(128, 128, 128, 0.664);
+    font-weight: 600;
+}
+
+nav{
+    padding: 0 14.5%;
+}
+
+nav ul {
+    background-color: white;
+    display:flex;
+    justify-content:flex-start;
+    padding: 10px;
+    margin: 24px 0;
+    gap: 50px;
+    font-weight:bolder;
+    cursor: pointer;
+} 
+#NavOpt :nth-child(2) {
+    color:rgba(128, 128, 128, 0.664);
+}
+.content-section{
+    display: flex;
+	justify-content: flex-start;
+	margin-bottom: 50px;
+}
+.left-column{
+    margin-top: 0.1px;
+    flex-basis: 26%;
+    padding: 3% 15%;
+}
+.left-column p {
+    line-height: 1.3;
+    color:rgba(128, 128, 128);
+    
+}
+.right-column{
+    margin-top: 30px;
+    margin-right:90px;
+    flex-basis: 38%;
+}
+.right-column p{
+    line-height: 1.3;
+    color:rgb(128, 128, 128);  
+}
+
+.middle-section{
+    display: flex;
+	justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+#logo-section {
+    display: flex;
+    padding: 25px;
+    margin-right: 60px;
+    justify-content: space-between;
+    line-height: 7em;
+}
+
+footer {    
+    background-color: rgba(98, 0, 255, 0.753);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    padding: 40px;
+    }
+#home p:nth-child(n+2), #archives p:nth-child(n+2) {
+    border-bottom: 0.1px rgba(245, 245, 245, 0.13) solid;
+    }
+.content {
+    padding: 20px 50px;
+    line-height: 1.3;
+    }
+.headings {
+    font-size: 24px;
+    padding: 20px 50px;
+    }
+.opening-hours {
+    padding: 20px 50px;
+    line-height: 1.2;
+    }
+.MapAddress{
+    padding: 20px 50px;
+}
+#home{
+    cursor: pointer;
+}
