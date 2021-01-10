@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0
+}
+body{
+    width: 100%;
+    font-family: 'Asap', sans-serif;
+}
+
+p, #nice{
+    line-height:1.5em;
+    font-size: 1.2em;
+    margin-left: 40px;
+}
+h1{
+    font-size:2.5em;
+}
+
+h2{
+    font-size:2em
+}
+
+.upper-bar{
+    display: flex;
+    justify-content:space-between;
+    background-color:lightcoral;
+
+}
+img{
+    margin-left: 40px;
+    }
+.nav-bar{
+    list-style-type:none;
+    display:flex;
+    margin-right: 50px;
+}
+li {
+    font-weight:bolder;
+    font-size:1.3em;
+    color: rgb(139, 0, 46);
+    margin-right:70px;
+    margin-top: 60PX;
+    text-transform:uppercase;
+    text-decoration:inherit;
+}
+.infos{
+    margin:40px;
+    line-height: 6em;
+}
+/* Progress bar animation */
+progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 3em;
+    
+    }
+progress[value]::-webkit-progress-bar {
+    border-radius: 50px; 
+    }
+progress[value]::-webkit-progress-value {
+    border-radius: 50px;
+    transition: 10;
+    }
+progress {
+    -webkit-writing-mode: horizontal-tb !important;
+    display: inline-block;
+    vertical-align: -0.2em;
+    }
+/* h1, h2, p, progress {
+    color: rgb(34, 14, 14);
+    margin-bottom: 10px;
+    }  */
+#pro{
+    font-weight: bold;
+    font-size: 1.9em;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+fieldset {
+    display: block;
+    margin: 20px;
+    border-radius: 5px;
+    }
+form {
+    margin: 0 auto; 
+    padding: 4em; 
+    display: block;      
+    }
+form div + div {
+    margin-top: 2em;     
+  }  
+.profile-description {    
+    vertical-align: top;
+    height: 10em;     
+    }
+input, textarea {
+    font: 1em sans-serif;
+    padding: 10px;    
+    width: 300px;
+    box-sizing: border-box;  
+    }
+label {
+      display: inline-block;
+      font-weight: 800px;
+      width: 10em;
+      cursor: pointer;
+      padding: 8px;
+      margin-right: -0.9em;
+    }  
+label.profile-description {
+      margin-bottom: 25px;
+    }
+  #country-select {
+      padding: 12px;
+      width: 300px;      
+    } 
+ #shipping-address {
+    width: 45px;
+    height: 30px;    
+    vertical-align: -70%;    
+    }
+p {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-block-start: 1.5em;
+    margin-block-end: 1.5em;
+    }
+input[type=checkbox]:checked ~ .shipping-address {
+    display: none;
+    }
+input[type=checkbox].news {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    margin-right: 30px;
+    }
+#next-button {
+    background-color: gray;
+    color: white;
+    float: right;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    width: 200px;
+    cursor: pointer;
+    }
+#back-button {
+    background-color: gray;
+    color: white;
+    float: left;        
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    width: 200px;
+    cursor: pointer;
+    } 
+    #back-button a :hover {
+    transform: scale(1.2)
+    }  
+.product-id {
+    width: 70px;
+    height: 50px;    
+    vertical-align: -110%;         
+    }  
+.item-column {
+    display: inline-grid;          
+    width: 25%;
+    padding: 30px;          
+    }     
+.product-type {
+    width: 150px;
+    height: 20px;  
+    }
+#card-select {
+    padding: 12px;
+    width: 300px;      
+    }
+input.input-width {
+    width: 72px;
+    }

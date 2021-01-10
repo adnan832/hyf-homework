@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- adding Favicon -->
+    <link rel="shortcut icon" type="image/png" href="Logo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap" rel="stylesheet">
+    <title>Ledendary Cloths</title>
+</head>
+<body>
+ <nav>
+     <div class="upper-bar">
+         <img src="Logo.png" alt="Company logo" wrigh="150" height="150">
+         <ul class="nav-bar">
+             <a href="https://www.legendarywhitetails.com/"> <li>Home</li> </a>
+             <a href="https://www.legendarywhitetails.com/mens-hunting-clothes"> <li>Category</li> </a>
+             <a href="https://help.legendarywhitetails.com/hc/en-us/requests/new"> <li>Contact</li> </a>
+             <a href="https://www.legendarywhitetails.com/account-login/?original=%2Faccount%2F"> <li>Sign IN</li> </a>
+         </ul>
+    </div>
+</nav>
+<section>
+<div class= "infos">
+    <h1>Sign up to ledendaryclothes.com</h1>
+    <p>We can’t wait to help you improve your life-style and gain the attention from people around <br>you!</p>
+    <p>Sign up below to save up to 70% on apparel, hand-bags and cosmetics. Our agents are busy<br> picking the best offers that match your preferences and style. Every week we will send you a<br> hand-picked selection - we just need to know a few details about your first…</p>
+    <h2>Step 1/4-tell us who you are?</h2>
+</div>
+<div id="progress-bar"><label id="pro">Progress</label>
+    <progress id="progress" value = "25" max = "100"></progress></div> 
+    <p id="nice">Nice to meet you. Let's spend a minute to get to know each other? Please enter the following:</p>
+<fieldset>
+    <form>                           
+        <div>
+            <label>First Name*</label>       
+            <input type="text" name="firstname" value="" placeholder="first name" required>        
+            <label>Last Name*</label>        
+            <input type="text" name="lastname" value="" placeholder="last name" required>
+        </div> 
+        <div>
+            <label>Country*</label>
+            <select id="country-select">            
+            <option value="">--Please choose an option--</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Germany">Germany</option>
+            <option value="England">England</option>
+            <option value="France">France</option>
+            <option value="Switzerland">Switzerland</option>
+            </select>
+        </div>  
+        <div> 
+            <label>Street Address*</label>
+            <input type="text" name="street address" value="" placeholder="street address" required>        
+            <label>Post Code*</label>
+            <input type="text" name="Post code" value="" placeholder="post code" required>
+        </div>
+        <div>
+            <label class="profile-description" for="profile description">Profile Description</label> 
+            <textarea placeholder="decribe yourself here!"></textarea> 
+        </div>
+            <p>Use the same address for billing and shipping? Unclock below to fill out separate shipping address</p>
+        <label for="shipping-address">Shipping address</label>
+        <input type="checkbox" id="shipping-address" checked> 
+        <div class="shipping-address">             
+            <div>
+                <label>First Name*</label>       
+                <input type="text" name="firstname" value="" placeholder="first name" required>        
+                <label>Last Name*</label>        
+                <input type="text" name="lastname" value="" placeholder="last name" required>
+            </div>     
+            <div><label>Country*</label>
+                <select id="country-select">            
+                <option value="">--Please choose an option--</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Germany">Germany</option>
+                <option value="England">England</option>
+                <option value="France">France</option>
+                <option value="Switzerland">Switzerland</option>
+                </select>
+            </div>
+            <div> 
+                <label>Street Address*</label>
+                <input type="text" name="street address" value="" placeholder="street address" required>        
+                <label>Post Code*</label>
+                <input type="text" name="Post code" value="" placeholder="post code" required>
+            </div>  
+        </div> 
+        <div>
+            <a href="index2.html"><input id="next-button" type="next" value="Next step"></a>
+        </div>
+    </form>
+    </fieldset>
+</section>
+</body>
+</html>
