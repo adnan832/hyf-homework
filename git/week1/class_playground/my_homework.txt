@@ -1,1 +1,2 @@
 i am wokring on my first git homework
+the task is to ad and commit
