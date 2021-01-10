@@ -1,3 +1,4 @@
 apples are red
 some are light green
-
+some are golden
+some are sweet
