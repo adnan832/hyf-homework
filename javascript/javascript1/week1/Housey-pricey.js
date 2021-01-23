@@ -17,3 +17,4 @@ if (housePrice < houseCost[1]) {
 else {
     console.log("Julia's house price looks reasonable.");
 }
+// End of Program
