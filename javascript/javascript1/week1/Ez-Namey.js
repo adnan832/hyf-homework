@@ -13,3 +13,4 @@ console.log(`The startup: ${startupName} contains ${startupName.length} characte
 
 const startUpUniqueName = firstWords.length + secondWords.length;
 console.log(`Total unique names: ${startUpUniqueName}`);
+// End of Program
