@@ -14,7 +14,7 @@ console.log(fullName2);
 //Second Part
 
 function getFullname(firstname, surname, useFormalName) {
-    if (firstname && surname == "")
+    if ((firstname =="" )&& (surname == ""))
         {
             return "please enter the name correctly";
         }
