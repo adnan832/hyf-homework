@@ -22,7 +22,7 @@ console.log(notes); // [{content: 'Pick up groceries', id: 1}, {content: 'Do lau
 //get a note
 
 function getNote(id) {
-    if (id >= notes.length) {
+    if (id > notes.length) {
         console.log("The required ID does not exist");
         return
     }
