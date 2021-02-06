@@ -11,7 +11,9 @@ const names = [
     "Tala",
   ];
 
-  const nameToRemove = names.splice(1,1);
+  const ahmadIndex = names.indexOf("Ahmad");
+
+  const nameToRemove = names.splice(ahmadIndex,1);
   
   
   console.log(names); // ['Peter', 'Yana', 'kristina', 'Rasmus', 'Samuel', 'katrine', 'Tala']
