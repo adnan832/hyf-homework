@@ -21,18 +21,18 @@ console.log(notes); // [{content: 'Pick up groceries', id: 1}, {content: 'Do lau
 
 //get a note
 
-function getNote(id) {
-    if (id > notes.length) {
-        console.log("The required ID does not exist");
-        return
-    }
-    for (let i = 0; i < notes.length; i++) {
-        if (notes[i].id === id) {
+function getNote(id) 
+{
+    for (let i = 0; i < notes.length; i++) 
+    {
+        if (notes[i].id === id) 
+        {
             console.log(notes[i]);
-            return
+            return;
         }    
-    }  
-}
+    }
+    console.log("The required ID does not exist");  
+};
 
 
 getNote(4);
