@@ -123,10 +123,20 @@ function getReply(command)
                 return `${num1} ${operator} ${num2} = ${num1 - num2}`;
                 break;
             case "/":
-                return `${num1} ${operator} ${num2} = ${(num1 / num2).toFixed(2)}`;
-                break;
-            case "%":
-                return `${num1} ${operator} ${num2} = ${num1 % num2}`;
+        if(num2 == 0){
+            return "division by zero is infinity"
+        }
+        else{
+            return  `${num1} ${operator} ${num2} = ${(num1 / num2).toFixed(2)}`;
+        }
+            break;
+        case "%":
+        if(num2 == 0){
+            return "division by zero is infinity"
+        }
+        else{
+            return  `${num1} ${operator} ${num2} = ${num1 % num2}`;
+        }
 
             default:
                 return "Not a valid operator!"
@@ -159,6 +169,6 @@ console.log(getReply('Set a timer for 0.1 minutes')); // Timer set for 0.1 minut
 
 console.log(getReply('what is 3 + 3'));
 console.log(getReply('what is 3 * 12'));
-console.log(getReply('what is 100 / 30'));
-console.log(getReply('what is 99 % 4'));
+console.log(getReply('what is 100 / 0'));
+console.log(getReply('what is 99 % 0'));
 console.log(getReply('what is 99 $ 4'));    //Not a valid operator!
