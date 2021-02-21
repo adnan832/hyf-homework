@@ -1,7 +1,15 @@
-const spiritAnimalName = ['Strong and Courageous Bear', 'The incredible butterfly',
-    'The Patience Cat', 'The Innocent Deer',
-    'The Friendly Dolphin', 'The Cunning Fox', 'The black Panter',
-    'A German Shepherd', 'The Roar of a Lion', 'A well visionery Hawk'];
+const spiritAnimalName = [
+    'Strong and Courageous Bear',
+    'The incredible butterfly',
+    'The Patience Cat',
+    'The Innocent Deer',
+    'The Friendly Dolphin',
+    'The Cunning Fox',
+    'The black Panter',
+    'A German Shepherd',
+    'The Roar of a Lion',
+    'A well visionery Hawk',
+];
 const input = document.getElementById('input');
 const btn = document.getElementById('getSpirit');
 const p = document.getElementById('spiritName');
