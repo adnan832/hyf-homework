@@ -122,12 +122,7 @@ function addCart(product) {
     var resultValue = document.querySelector(".total span");
     var totalPrice = parseInt(resultValue.innerHTML);
 
-    if (totalPrice) {
-        totalPrice += product.price;
-    }
-    else {
-        totalPrice = product.price;
-    }
+    totalPrice = totalPrice  ? totalPrice += product.price : product.price;
     resultValue.innerHTML = totalPrice;
 
 }
