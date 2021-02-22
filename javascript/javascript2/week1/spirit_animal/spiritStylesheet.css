@@ -1,0 +1,53 @@
+body {
+    background-color:goldenrod;
+    background-image: url("https://pub-static.fotor.com/static/web/site/features/backgrounds/images/Fotor-wood-background-image-5.jpg");
+    
+}
+#mainContainer {
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 10%;
+    padding: 30px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color:rgb(15, 15, 73);
+    
+}
+#selectOption {
+    padding: 10px;
+    margin-left: 0.5%;    
+}
+#input {
+    padding: 10px;
+    margin-left: 0.5%;
+}
+label {
+    margin-left: 30px;
+}
+#button {
+    margin-top: 10%;
+    margin-left: 35%;
+}
+button {
+    padding: 10px;
+    width: 150px;
+    border-radius: 2px;
+    border: 0.5px solid black; 
+    box-shadow: 0px 8px 15px rgba(81, 7, 161, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    background-color: rgb(69, 44, 116);
+    color: rgb(182, 236, 82);
+    font-weight:bolder;   
+}
+button:hover {
+    background-color: rgb(4, 77, 99);    
+}
+p {
+    text-align: center;  
+    margin-top: 10%;
+    font-size: 1.4em;
+    font-weight: bold;
+    color:rgb(15, 15, 73);
+}
