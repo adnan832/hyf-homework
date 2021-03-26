@@ -1,0 +1,45 @@
+
+body {
+    background-color:goldenrod;
+    background-image: url("https://pub-static.fotor.com/static/web/site/features/backgrounds/images/Fotor-wood-background-image-5.jpg");
+    
+}
+
+#mainDiv {
+    background-color: rgb(172, 82, 46);
+    margin: -1.2%;
+}
+h1 {
+    margin-left: 34%;
+}
+#inputKey {
+    margin-left: 40%;
+    
+}
+#btn {
+    display:flex;
+    justify-content: space-around;
+    margin-left: 26%;
+    margin-top: 3%;
+}
+
+#teamA {
+    float: left;
+    margin-left: 15%;
+    margin-top: 10%;    
+}
+#teamB{
+    float: right;
+    margin-right: 15%;
+    margin-top: 10%;
+}
+
+#teamA h2{
+color:rgb(6, 58, 78);
+font-size: 1.8em;
+}
+
+#teamB h2{
+    color:rgb(14, 77, 8);
+    font-size: 1.8em;
+    }
