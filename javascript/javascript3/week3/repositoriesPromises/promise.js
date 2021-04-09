@@ -9,7 +9,7 @@ const classmate3 = fetch(
     "https://api.github.com/search/repositories?q=user:Hani-far"
 ).then(response => response.json());
 // promiseall
-function promiseAll() {
+function getAllRepositories() {
     Promise.all([classmate1, classmate2, classmate3])
         .then(userData => {
             console.log(userData);
@@ -29,4 +29,4 @@ function promiseAll() {
         })
         .catch(error => console.log(error));
 }
-promiseAll();
+getAllRepositories();
