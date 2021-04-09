@@ -15,14 +15,15 @@ fetchMovies();
 //Promise that resolves after set time 
 
 async function makeUpYourOwnFunctionNameFnc(resolvAfterSec) {
-    const promise = new Promise(resolve => {
-        setTimeout(() => {
-            resolve()
-        }, resolvAfterSec * 1000);
-    })
-        .then(() => console.log('I am called asynchronously after 8 seconds'))
-    await promise;
-}
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve();
+      }, resolvAfterSec * 1000);
+    });
+  }
+  makeUpYourOwnFunctionNameFnc().then(() =>
+  console.log('I am called asynchronously after 8 seconds')
+);
 
 console.log(makeUpYourOwnFunctionNameFnc(8))
 
