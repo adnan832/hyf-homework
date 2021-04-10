@@ -39,7 +39,7 @@ function saturnLogger(){
 // saturnLogger('Saturn');
 
 function planetLogFunction(callback){
-    return callback();
+    callback();
 }
 planetLogFunction(earthLogger);
 planetLogFunction(saturnLogger);
@@ -62,8 +62,8 @@ document.getElementById('callbackButton2').addEventListener('click', function(){
 document.getElementById('logLocation').addEventListener("click", function() {
 
     navigator.geolocation.getCurrentPosition(function(position) {
-    document.querySelector('#location1').append(`Latitude is: ${position.coords.latitude} `) 
-    document.querySelector('#location2').append(`Langitude is: ${position.coords.longitude} `);
+    document.querySelector('#location1').textContent = `Latitude is:${position.coords.latitude}`; 
+    document.querySelector('#location2').textContent = `Longitude is:${position.coords.longitude}`;
 });
 });
 
@@ -100,7 +100,7 @@ function jokeCreator(shouldTellFunnyJoke, logFunnyJoke, logBadJoke){
     if(shouldTellFunnyJoke === true){
         return logFunnyJoke();
     } else {
-        return logBadJoke();
+        logBadJoke();
     }    
 
     function logFunnyJoke(){
@@ -113,5 +113,5 @@ function jokeCreator(shouldTellFunnyJoke, logFunnyJoke, logBadJoke){
 
     }
 }
-jokeCreator(true);
-jokeCreator(false);
+jokeCreator(true, logFunnyJoke, logBadJoke);
+jokeCreator(false, logFunnyJoke, logBadJoke);
