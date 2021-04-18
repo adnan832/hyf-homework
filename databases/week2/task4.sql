@@ -1,0 +1,76 @@
+
+-- CREATE Football Club Database
+CREATE DATABASE farum_football_club_db;
+USE farum_football_club_db;
+
+-- CREATE STATUS TABLE
+CREATE TABLE status (
+  id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`)
+  )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+-- CREATE MATCHES TABLE
+CREATE TABLE matches (
+  id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  type VARCHAR(255) NOT NULL,
+  winner VARCHAR(255) NOT NULL,
+  looser VARCHAR(255) NOT NULL,
+  date DATETIME NULL DEFAULT NULL,
+  status_id INT(10) UNSIGNED NOT NULL,
+  PRIMARY KEY (`id`),  
+  CONSTRAINT `fk_status`
+    FOREIGN KEY (`status_id`)
+    REFERENCES `status` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
+    )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
+-- CREATE TEAMS TABLE
+
+CREATE TABLE teams (
+  id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  name VARCHAR(45) NOT NULL,
+  division VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`)
+  )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
+-- CREATE PLAYER TABLE
+
+CREATE TABLE players (
+  id INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  team_id INT(10) UNSIGNED NOT NULL,
+  PRIMARY KEY (`id`),  
+  CONSTRAINT `fk_team`
+    FOREIGN KEY (`team_id`)
+    REFERENCES `teams` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
+    )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
+-- CREATE POINT TABLE`
+
+CREATE TABLE points_table (
+  match_id INT(10) UNSIGNED NOT NULL,
+  team_id INT(10) UNSIGNED NOT NULL,
+  points INT(10) UNSIGNED NOT NULL,
+  PRIMARY KEY (`match_id`, `team_id`), 
+  CONSTRAINT `fk_match_team_match`
+    FOREIGN KEY (`match_id`)
+    REFERENCES `matches` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `fk_team_match_team`
+    FOREIGN KEY (`team_id`)
+    REFERENCES `teams` (`id`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
+    )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
