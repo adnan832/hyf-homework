@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(43, 35, 4);
+  color: black;
+  font-size: 1.7rem;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+.App {
+  padding: 50px;
+  margin-top: 50px;
+  text-align: center;
+  background-color: rgb(107, 96, 34);
+}
+.form-input {
+  margin: auto;
+  font-size: 1.7rem;
+  border: none;
+  background: white;
+  transition: all 0.3s ease;
+}
