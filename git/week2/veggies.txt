@@ -3,3 +3,5 @@ spinach
 green broccoli
 pumpkin
 cabbage
+eggplant
+mushrooms
